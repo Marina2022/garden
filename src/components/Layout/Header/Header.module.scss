@@ -1,0 +1,40 @@
+.logo {
+  width: 72px;
+  height: 72px;
+  img {
+    max-width: 100%;
+  }
+
+  margin-right: 59px;
+}
+
+.headerWrapper {
+  display: flex;
+  justify-content: space-between;
+  margin: 16px 0 76px;
+  align-items: center;
+}
+
+.catalogBtn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #FFFFFF;
+  background: #339933;
+  border: 2px solid #339933;
+  border-radius: 5px;
+  height: 49px;
+  width: 125px;
+  margin-right: auto;
+}
+
+.menuItem {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 130%;
+  margin-right: 40px;
+
+  &:last-child {
+    margin-right: 160px;
+  }
+}

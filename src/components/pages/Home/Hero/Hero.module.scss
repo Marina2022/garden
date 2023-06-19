@@ -1,0 +1,31 @@
+.hero {
+  background: #A1E2EB url("../../../../assets/flowers.png") no-repeat right bottom;
+  padding: 130px 0 139px;
+}
+.title {
+  font-size: 80px;
+  line-height: 130%;
+  color: #FFFFFF;
+  margin-bottom: 3px;
+}
+
+.subtitle {
+  font-size: 63px;
+  line-height: 130%;
+  color: #FFFFFF;
+  margin-bottom: 60px;
+}
+
+.saleBtn {
+  background: #FFFFFF;
+  border-radius: 13px;
+  width: 155px;
+  height: 82px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 25px;
+  line-height: 130%;
+  color: #2D2D2D;
+
+}
