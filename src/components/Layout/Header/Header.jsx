@@ -23,11 +23,11 @@ const Header = () => {
             Main Page
           </Link>
 
-          <Link to={'/catalog'} className={s.menuItem}>
+          <Link to={'/all'} className={s.menuItem}>
             All products
           </Link>
 
-          <Link to={'/catalog'} className={s.menuItem}>
+          <Link to={'/sale'} className={s.menuItem}>
             All sales
           </Link>
 

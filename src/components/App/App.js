@@ -17,11 +17,8 @@ function Cart() {
 }
 
 function App() {
-
-  // fetch('http://localhost:3333/categories/all').then(res=>res.json()).then(data=>console.log(data))
   return (
     <div className="App">
-
         <Routes>
           <Route element={<Layout/>} path={'/'}>
             <Route element={<Home/>} path={''} />
@@ -29,10 +26,8 @@ function App() {
             <Route element={<All/>} path={'/all'} />
             <Route element={<Categories/>} path={'/categories'} />
             <Route element={<Category/>} path={'/categories/:id'} />
-            <Route element={<Product/>} path={'/catalog/:id'} />
+            <Route element={<Product/>} path={'/product/:id'} />
             <Route element={<Cart/>} path={'cart'} />
-
-
             <Route element={<NotFound/>} path={'*'}/>
           </Route>
         </Routes>

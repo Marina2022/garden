@@ -1,0 +1,26 @@
+.title {
+  margin-bottom: 20px;
+}
+
+.catalog {
+  padding: 40px 0 89px;
+}
+
+.catList {
+  display: flex;
+}
+
+.allCatsLink {
+  position: absolute;
+  top: 12px;
+  left: 254px;
+  font-size: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  letter-spacing: 0.03em;
+  width: 120px;
+  height: 31px;
+  border: 2px solid #8B8B8B;
+  color: #8B8B8B;
+}

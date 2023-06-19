@@ -1,8 +1,8 @@
 .hero {
-  background: #A1E2EB url("../../../../assets/flowers.png") no-repeat right bottom;
-  padding: 130px 0 139px;
+  background: #A1E2EB;
 }
 .title {
+  padding-top: 130px;
   font-size: 80px;
   line-height: 130%;
   color: #FFFFFF;
@@ -27,5 +27,10 @@
   font-size: 25px;
   line-height: 130%;
   color: #2D2D2D;
+  margin-bottom: 139px;
 
+}
+
+.wrapper {
+background: url("../../../../assets/flowers.png") no-repeat right bottom;
 }
