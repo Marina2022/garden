@@ -1,0 +1,76 @@
+.footer {
+  margin-bottom: 38px;
+}
+
+.wrapper {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.contacts {
+
+}
+
+.address {
+  width: 534px;
+  margin-left: auto;
+}
+
+.title {
+  margin-bottom: 25px;
+}
+
+.phone {
+  width: 649px;
+  font-weight: 600;
+  font-size: 70px;
+  line-height: 130%;
+  color: #000000;
+  margin-bottom: 30px;
+  display: block;
+}
+
+.icons {
+  width: 196px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 47px;
+}
+
+
+.icon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  height: 77px;
+}
+
+.whatsappIcon {
+  position: relative;
+  top: -2px;
+}
+
+.addressText {
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 130%;
+  text-decoration-line: underline;
+  color: #000000;
+  margin-bottom: 20px;
+}
+
+.hours {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 130%;
+  color: #000000;
+  margin-bottom: 2px;
+}
+.hoursValue {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 130%;
+  color: #000000;
+}

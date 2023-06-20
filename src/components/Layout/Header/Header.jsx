@@ -15,7 +15,7 @@ const Header = () => {
             <img src={logo} alt="logo"/>
           </a>
 
-          <Link to={'/catalog'} className={s.catalogBtn}>
+          <Link to={'/categories'} className={s.catalogBtn}>
             Catalog
           </Link>
 
