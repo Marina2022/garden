@@ -1,0 +1,21 @@
+.cats {
+  margin-bottom: 50px;
+}
+
+.title {
+  margin-bottom: 81px;
+}
+
+.catList {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.item {
+  margin-right: 32px;
+  width: 318px;
+
+  &:nth-child(4) {
+    margin-right: 0;
+  }
+}

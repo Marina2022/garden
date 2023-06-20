@@ -2,8 +2,7 @@ import s from './NotFound.module.scss';
 
 const NotFound = () => {
   return (
-    <div>
-
+    <div className={s.notFound}>
     </div>
   );
 };

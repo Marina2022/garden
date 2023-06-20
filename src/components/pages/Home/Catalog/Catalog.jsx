@@ -7,6 +7,7 @@ import CategoryCard from "../../../sharedComponents/CategoryCard/CategoryCard";
 import {Link} from "react-router-dom";
 
 const Catalog = () => {
+
   const dispatch = useDispatch()
 
   useEffect(() => {

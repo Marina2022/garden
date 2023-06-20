@@ -25,7 +25,7 @@ function App() {
             <Route element={<Sale/>} path={'/sale'} />
             <Route element={<All/>} path={'/all'} />
             <Route element={<Categories/>} path={'/categories'} />
-            <Route element={<Category/>} path={'/categories/:id'} />
+            <Route element={<Category/>} path={'/category/:id'} />
             <Route element={<Product/>} path={'/product/:id'} />
             <Route element={<Cart/>} path={'cart'} />
             <Route element={<NotFound/>} path={'*'}/>
