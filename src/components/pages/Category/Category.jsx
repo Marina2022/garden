@@ -13,7 +13,7 @@ const Category = () => {
   const {id} = useParams()
 
   const [products, setProducts] = useState(null);
-  const [title, setTitle] = useState('ddd');
+  const [title, setTitle] = useState('');
 
   const {withSale, sort, priceFrom, priceTo} = useSelector(state => state.filters)
 
@@ -24,6 +24,7 @@ const Category = () => {
       setProducts(data.data.data)
     }
     getProductByCat(id)
+    window.scrollTo(0, 0);
   }, [])
 
 

@@ -12,6 +12,7 @@ const Categories = () => {
 
   useEffect(() => {
     dispatch(getCategories())
+    window.scrollTo(0, 0);
   }, [])
 
   const isLoading = useSelector(state => state.catalog.categoriesAreLoading)
