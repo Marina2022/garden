@@ -1,0 +1,29 @@
+.sortList {
+  position: absolute;
+  width: 100%;
+  min-height: 100px;
+  background: #fff;
+  border: 1px solid #6C6C6C ;
+  z-index: 1;
+  top: 55px;
+  border-radius: 7px;
+
+  span {
+    padding: 5px 10px;
+    display: inline-block;
+  }
+}
+
+.sortItem {
+  font-size: 16px;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  border-bottom: #ACACAC 1px solid;
+  &:last-child {
+    border-bottom: none;
+  }
+
+  &:hover {
+    background: #eff0eb;
+  }
+}

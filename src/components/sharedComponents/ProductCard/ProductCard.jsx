@@ -4,7 +4,6 @@ import {Link} from "react-router-dom";
 
 const ProductCard = ({title, price, discont_price, image, id}) => {
   const discount = Math.trunc((price - discont_price) / price * 100)
-  console.log({id})
   return (
     <li className={s.listItem}>
       <div className={s.productCard}>
@@ -13,7 +12,7 @@ const ProductCard = ({title, price, discont_price, image, id}) => {
           <div className={s.actualPrice}> {discont_price ? discont_price : price}<span className={s.dollar}>$</span>
           </div>
           {discont_price && <div className={s.oldPrice}>{price}$</div>}
-          {discount > 0 && <div className={s.discount}>{discount}%</div>}
+          {discont_price &&  <div className={s.discount}>-{discount}%</div>}
         </div>
         <Link to={`/product/${id}`} className={s.link}><h3 className={s.title}>{title}</h3></Link>
       </div>

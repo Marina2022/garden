@@ -12,6 +12,8 @@ export const getProducts = createAsyncThunk('catalog/getProducts', async () => {
   return data.data
 })
 
+
+
 const catalogSlice = createSlice({
   name: 'catalog',
   initialState: {
@@ -43,8 +45,10 @@ const catalogSlice = createSlice({
     })
     .addCase(getProducts.rejected, (state, action) => {
       state.productsAreLoading = false
-      console.log('Категории не загрузились')
-    }),
+      console.log('Товары не загрузились')
+    })
+
+
 })
 
 export const selectCategories = state => state.catalog.categories

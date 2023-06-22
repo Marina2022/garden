@@ -2,18 +2,19 @@
   position: relative;
   width: 318px;
   min-height: 366px;
+  margin-bottom: 56px;
 }
 
 .image {
-  width: 300px;
-  height: 300px;
+  width: 318px;
+  height: 318px;
   object-fit: cover;
   margin-bottom: 20px;
 }
 
 .listItem {
-  margin-right: 35px;
-  &:nth-child(4) {
+  margin-right: 32px;
+  &:nth-child(4n) {
     margin-right: 0;
   }
 }
