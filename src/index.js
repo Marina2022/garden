@@ -7,15 +7,16 @@ import {configureStore} from "@reduxjs/toolkit";
 import {Provider} from "react-redux";
 import formSlice from "./store/formSlice";
 import filterSlice from "./store/filterSlice";
+import cartSlice from "./store/cartSlice";
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
-
 
 const store = configureStore({
     reducer: {
       catalog: catalogSlice,
       forms: formSlice,
       filters: filterSlice,
+      cart: cartSlice,
     }
   }
 )

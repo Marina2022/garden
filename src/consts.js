@@ -5,8 +5,6 @@ export const APIRoutes = {
   category: 'categories/',
   allProducts: 'products/all',
   product: 'products/',
-
   sendDiscount: 'sale/send',
   sendOrder: 'order/send'
-
 }

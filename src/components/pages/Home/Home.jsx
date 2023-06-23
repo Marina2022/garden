@@ -1,4 +1,3 @@
-import s from './Home.module.scss';
 import Hero from "./Hero/Hero";
 import Catalog from "./Catalog/Catalog";
 import DiscountForm from "./DiscountForm/DiscountForm";

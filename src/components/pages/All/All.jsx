@@ -20,7 +20,6 @@ const All = () => {
 
   const products = useSelector(selectProducts)
 
-
   let productsToShow = products
   if (withSale) productsToShow = productsToShow.filter((product) => product.discont_price)
   if (priceFrom) productsToShow = productsToShow.filter((product) => product.price >= priceFrom)
@@ -49,9 +48,7 @@ const All = () => {
     }
   }
 
-
   if (isLoading) return <div className="container" style={{'marginTop': 100, 'marginBottom': 100}}>Loading...</div>
-
 
   return (
     <div className={s.allProducts}>
@@ -65,9 +62,7 @@ const All = () => {
             productsToShow.map((product)=><ProductCard {...product} key={product.id} />)
           }
         </ul>
-
       </div>
-
     </div>
   );
 };

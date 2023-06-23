@@ -8,7 +8,6 @@ const Hero = () => {
       <div className={cn("container", s.wrapper)}>
         <h1 className={s.title}>Sale</h1>
         <h2 className={s.subtitle}>New season</h2>
-
         <Link to='/sale' className={s.saleBtn}>
           Sale
         </Link>

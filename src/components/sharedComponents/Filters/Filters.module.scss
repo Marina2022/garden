@@ -69,12 +69,25 @@
   width: 219px;
   height: 42px;
   padding: 10px;
-
   color: #ACACAC;
   font-size: 16px;
   font-weight: 500;
   line-height: 130%;
   letter-spacing: 0.48px;
+
+}
+
+.select_chosen {
+  border-radius: 7px;
+  border: 1px solid #000;
+  width: 219px;
+  height: 42px;
+  padding: 10px;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 130%;
+  letter-spacing: 0.48px;
+   color: #000;
 }
 
 .selectWrapper {

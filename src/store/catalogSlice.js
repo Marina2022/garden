@@ -12,8 +12,6 @@ export const getProducts = createAsyncThunk('catalog/getProducts', async () => {
   return data.data
 })
 
-
-
 const catalogSlice = createSlice({
   name: 'catalog',
   initialState: {
@@ -47,8 +45,6 @@ const catalogSlice = createSlice({
       state.productsAreLoading = false
       console.log('Товары не загрузились')
     })
-
-
 })
 
 export const selectCategories = state => state.catalog.categories

@@ -5,7 +5,6 @@ import {useEffect} from "react";
 import {getCategories, selectCategories} from "../../../store/catalogSlice";
 import CategoryCard from "../../sharedComponents/CategoryCard/CategoryCard";
 
-
 const Categories = () => {
 
   const dispatch = useDispatch()

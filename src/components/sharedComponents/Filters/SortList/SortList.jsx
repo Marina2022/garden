@@ -1,18 +1,17 @@
 import s from './SortList.module.scss';
 import {setSort} from "../../../../store/filterSlice";
 import {useDispatch} from "react-redux";
-import {useRef} from "react";
 
 const sortTypes = ['By discount', 'Cheap first', 'Expensive first']
 
-const SortList = ({isSortListShown, setIsSortListShown}) => {
+const SortList = ({isSortListShown, setIsSortListShown, setSortInputValue}) => {
 
   const dispatch = useDispatch()
 
   const onSortClick =(index) => {
+    setIsSortListShown(false)
+    setSortInputValue(sortTypes[index])
     dispatch(setSort(index))
-
-
   }
 
   return (

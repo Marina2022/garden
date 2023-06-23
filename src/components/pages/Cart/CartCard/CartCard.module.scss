@@ -1,0 +1,90 @@
+.card {
+  position: relative;
+  width: 100%;
+  padding: 40px 0;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px #A7A7A7 solid;
+}
+
+.image {
+  display: block;
+  width: 192px;
+  height: 166px;
+  object-fit: cover;
+  margin-right: 29px;
+}
+
+.titleBlock {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 318px;
+  margin-right: 24px;
+}
+
+.title {
+  color: #3A3A3A;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 130%;
+  letter-spacing: 0.54px;
+}
+
+.inputWrapper {
+  width: 140px;
+  border-radius: 12px;
+  border: 1px solid #000;
+  padding: 0 10px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.input {
+  width: 74px;
+  border: none;
+  outline: none;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 130%;
+  letter-spacing: 0.54px;
+}
+
+.actualPrice {
+  color: #000;
+  font-size: 40px;
+  font-weight: 600;
+  line-height: 130%;
+  letter-spacing: 1.2px;
+  margin-right: 70px;
+}
+
+.dollar {
+  font-size: 20px;
+}
+
+.oldPrice {
+  color: #8B8B8B;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 130%;
+  letter-spacing: 0.6px;
+  text-decoration-line: strikethrough;
+}
+
+.minus {
+  position: relative;
+  top: -4px;
+}
+.closeBtn {
+  position: absolute;
+  top: 40px;
+  right: 0px;
+}
+
+
+

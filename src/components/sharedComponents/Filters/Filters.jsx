@@ -4,11 +4,12 @@ import SortList from "./SortList/SortList";
 import {useDispatch, useSelector} from "react-redux";
 import {setPriceFrom, setPriceTo, setWithSale, setSort} from "../../../store/filterSlice";
 import {useLocation} from "react-router-dom";
+import cn from "classnames";
 
 const Filters = () => {
 
   const [isSortListShown, setIsSortListShown] = useState(false)
-  const [sortInputValue, setSortInputValue] = useState('')
+  const [sortInputValue, setSortInputValue] = useState('by default')
 
   const dispatch = useDispatch()
 
@@ -55,26 +56,29 @@ const Filters = () => {
           <input value={priceFrom} onChange={onFromChange} className={s.input} type="text" placeholder="from"/>
           <input value={priceTo} onChange={onToChange} className={s.input} type="text" placeholder="to"/>
           {
-            pathname !== '/sale' &&  <span>Discounted items</span>
+            pathname !== '/sale' && <span>Discounted items</span>
           }
           {
-            pathname !== '/sale' && <input onChange={onCheck} className={s.checkbox} type="checkbox" id="checkbox" checked={withSale}/>
+            pathname !== '/sale' &&
+            <input onChange={onCheck} className={s.checkbox} type="checkbox" id="checkbox" checked={withSale}/>
           }
           {
-            pathname !== '/sale' && <label className={s.checkboxLabel} htmlFor="checkbox" ></label>
+            pathname !== '/sale' && <label className={s.checkboxLabel} htmlFor="checkbox"></label>
           }
-
 
           <span className={s.sortSpan}>Sorted</span>
           <div className={s.selectWrapper}>
-            <div className={s.select} onClick={onSortWrapperClick} ref={sortDivRef}>
-              {sortInputValue ? sortInputValue : 'by default'}
+            <div className={cn({
+              [s.select]: sortInputValue === 'by default',
+              [s.select_chosen]: sortInputValue !== 'by default'
+            })} onClick={onSortWrapperClick} ref={sortDivRef}>
+              {sortInputValue}
             </div>
-            <SortList isSortListShown={isSortListShown} setIsSortListShown={setIsSortListShown}/>
+            <SortList setSortInputValue={setSortInputValue} isSortListShown={isSortListShown}
+                      setIsSortListShown={setIsSortListShown}/>
           </div>
         </div>
       </div>
-
     </div>
   );
 };

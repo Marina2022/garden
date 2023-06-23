@@ -11,10 +11,8 @@ import {useSelector} from "react-redux";
 const Category = () => {
 
   const {id} = useParams()
-
   const [products, setProducts] = useState(null);
   const [title, setTitle] = useState('');
-
   const {withSale, sort, priceFrom, priceTo} = useSelector(state => state.filters)
 
   useEffect(() => {
@@ -27,12 +25,10 @@ const Category = () => {
     window.scrollTo(0, 0);
   }, [])
 
-
   let productsToShow = products
   if (withSale) productsToShow = productsToShow.filter((product) => product.discont_price)
   if (priceFrom) productsToShow = productsToShow.filter((product) => product.price >= priceFrom)
   if (priceTo) productsToShow = productsToShow.filter((product) => product.price <= priceTo)
-
 
   if (productsToShow) {
     switch (sort) {
@@ -71,7 +67,6 @@ const Category = () => {
           }
         </ul>
       </div>
-
     </div>
   );
 };

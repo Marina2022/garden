@@ -8,8 +8,7 @@ import ProductCard from "../../sharedComponents/ProductCard/ProductCard";
 
 const SalePage = () => {
 
-  const {withSale, sort, priceFrom, priceTo} = useSelector(state => state.filters)
-
+  const {sort, priceFrom, priceTo} = useSelector(state => state.filters)
   const dispatch = useDispatch()
 
   useEffect(() => {
@@ -21,13 +20,11 @@ const SalePage = () => {
 
   const products = useSelector(selectProducts)
 
-
   let productsToShow = products
   productsToShow = productsToShow.filter((product) => product.discont_price)
 
   if (priceFrom) productsToShow = productsToShow.filter((product) => product.price >= priceFrom)
   if (priceTo) productsToShow = productsToShow.filter((product) => product.price <= priceTo)
-
 
   if (productsToShow) {
     switch (sort) {
@@ -51,9 +48,7 @@ const SalePage = () => {
     }
   }
 
-
   if (isLoading) return <div className="container" style={{'marginTop': 100, 'marginBottom': 100}}>Loading...</div>
-
 
   return (
     <div className={s.salePfoducts}>
@@ -67,9 +62,7 @@ const SalePage = () => {
             productsToShow.map((product)=><ProductCard {...product} key={product.id} />)
           }
         </ul>
-
       </div>
-
     </div>
   );
 };

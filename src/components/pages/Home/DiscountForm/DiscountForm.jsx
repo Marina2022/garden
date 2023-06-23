@@ -6,23 +6,21 @@ import {useDispatch, useSelector} from "react-redux";
 
 const DiscountForm = () => {
 
-  const [value, setValue] = useState('+45')
-
+  const [value, setValue] = useState('+49 ')
   const dispatch = useDispatch();
-
   const isSubmitting = useSelector (state => state.forms.isDiscountOrderSubmitting)
 
-  const onsubmitClick = (e) => {
+  const onSubmitClick = (e) => {
     e.preventDefault();
     const formData = {
-      phone: value
+      phone: value.replace(' ', '')
     }
     dispatch(sendDiscountOrder(formData))
   }
 
   const onInputChange = (e) => {
-    const onlyNumbersValue = '+45' + e.target.value.slice(3).replace(/\D+/, '')
-    const shortValue = onlyNumbersValue.slice(0, 13)
+    const onlyNumbersValue = '+49 ' + e.target.value.slice(3).replace(/\D+/, '')
+    const shortValue = onlyNumbersValue.slice(0, 14)
     setValue(shortValue)
   }
 
@@ -38,7 +36,7 @@ const DiscountForm = () => {
             <p className={s.text}> on the first order</p>
             <form>
               <input className={s.input} onChange={onInputChange} type="text" value={value}/>
-              <button className={s.submitBtn} onClick={onsubmitClick} disabled={isSubmitting}>Get a discount</button>
+              <button className={s.submitBtn} onClick={onSubmitClick} disabled={isSubmitting}>Get a discount</button>
             </form>
           </div>
         </div>

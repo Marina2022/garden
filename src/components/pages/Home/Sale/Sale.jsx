@@ -2,7 +2,7 @@ import s from './Sale.module.scss';
 import SectionTitle from "../../../sharedComponents/SectionTitle/SectionTitle";
 import {useEffect} from "react";
 import {useDispatch, useSelector} from "react-redux";
-import {getCategories, getProducts, selectCategories, selectProducts} from "../../../../store/catalogSlice";
+import {getProducts, selectProducts} from "../../../../store/catalogSlice";
 import ProductCard from "../../../sharedComponents/ProductCard/ProductCard";
 
 const Sale = () => {
@@ -14,7 +14,6 @@ const Sale = () => {
   }, [])
 
   const isLoading = useSelector(state => state.catalog.productsAreLoading)
-
   const products = useSelector(selectProducts)
 
   const productsToShow = products.filter((product)=>product.discont_price).slice(0, 3)

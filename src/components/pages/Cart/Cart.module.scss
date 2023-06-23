@@ -1,0 +1,41 @@
+.cart {
+  margin-bottom: 143px;
+}
+
+.title {
+  margin-bottom: 16px;
+}
+
+.linkWrapper {
+  text-align: right;
+}
+
+.backLink {
+  justify-content: flex-end;
+  color: #000;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 130%;
+  display: flex;
+  align-items: center;
+  padding-bottom: 34px;
+  border-bottom: 1px solid #A7A7A7;
+
+  span {
+    margin-right: 17px;
+  }
+
+  img {
+    position: relative;
+    top: 1px;
+  }
+}
+
+.wrapper {
+  display: flex;
+  align-items: flex-start;
+}
+
+.content {
+  width: 824px;
+}

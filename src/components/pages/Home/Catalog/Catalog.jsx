@@ -38,8 +38,6 @@ const Catalog = () => {
             })
           }
         </ul>
-
-
       </div>
     </div>
   );

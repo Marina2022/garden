@@ -9,8 +9,7 @@ const ProductCard = ({title, price, discont_price, image, id}) => {
       <div className={s.productCard}>
         <img className={s.image} src={BASE_URL + image} alt="product"/>
         <div className={s.priceWrapper}>
-          <div className={s.actualPrice}> {discont_price ? discont_price : price}<span className={s.dollar}>$</span>
-          </div>
+          <div className={s.actualPrice}> {discont_price ? discont_price : price}<span className={s.dollar}>$</span></div>
           {discont_price && <div className={s.oldPrice}>{price}$</div>}
           {discont_price &&  <div className={s.discount}>-{discount}%</div>}
         </div>
